@@ -107,7 +107,7 @@ body {
     background-color: #fff;
 }
 .content.dark {
-    background-color: #666;
+    background-color: #222;
     color: #ddd;
 }
 .content.ltr .contentText, .content.ltr .contentMedia {
@@ -145,17 +145,18 @@ body {
     flex-direction: column;
     align-items: center;
 }
+.content .contentCenter .centerTitle {
+    font-family: 'Montserrat';
+}
 
 .content .contentCenter .emailList {
     width: 60vw;
     min-width: 550px;
     max-width: 600px;
     height: 90px;
-    background-color: #ddd;
+    background-color: #fff;
     margin-top: 50px;
-    border: 2px solid rgb(233, 232, 232);
-    border: none;
-    border-radius: 45px;
+    border-radius: 10px;
     box-shadow: 0 2px 1px rgba(0,0,0,0.1), 0 5px 1px rgba(0,0,0,0.1);
     font-size: 30px;
     display: flex;
@@ -165,27 +166,37 @@ body {
     background-color: transparent;
     border: none;
     height: 60px;
+    white-space: normal;
     flex-grow: 1;
     font-size: 1em;
     padding: 0 20px;
     margin: 15px 0;
-    border-right: 2px solid rgba(0,0,0,0.1);
     color: black; /* Hvorfor funker ikke dette? */
+}
+.content .contentCenter .emailList input[type="text"]::placeholder {
+    color: black;
 }
 .content .contentCenter .emailList input:focus {
     outline: none;
 }
 .content .contentCenter .emailList input[type="button"] {
-    background-color: transparent;
-    border: none;
+    background-color: #2299dd;
     height: 100%;
     padding: 0 30px;
+    border-radius: 0px;
+    border: none;
     font-size: 0.5em;
     cursor: pointer;
-    border-radius: 13px;
+    display: block;
+    appearance: none;
+    -webkit-appearance: none;
+    color: rgba(255,255,255,0.8);
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 .content .contentCenter .emailList input[type="button"]:hover {
-    background-color: #d3d3d3;
+    background-color: #5fb5e6;
 }
 
 /* CLEARFIX */
