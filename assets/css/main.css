@@ -95,11 +95,9 @@ body {
     position: relative;
 }
 #heroHeader .heroImage .computerImage {
-    left: 36px;
-    bottom: -235px;
-    width: 743px;
-    height: 600px;
+    width: 100%;
     position: absolute;
+    bottom: -100px;
     object-fit: cover;
     z-index:2;
 }
