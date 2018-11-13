@@ -233,7 +233,7 @@ body {
 .content .contentCenter .emailList input[type="button"] {
     display: none;
 }
-.content .contentCenter .emailList input[type="button"]:hover {
+.content .contentCenter .emailList label:hover {
     background-color: #5fb5e6;
 }
 
