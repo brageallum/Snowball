@@ -266,6 +266,7 @@ body {
 }
 #footer a {
     color: #2299dd;
+    text-decoration: none;
 }
 /* CLEARFIX */
 .content::after {
