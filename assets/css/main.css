@@ -217,7 +217,8 @@ body {
     line-height: 90px;
     background-color: #2299dd;
     height: 100%;
-    padding: 0 30px;
+    text-align: center;
+    width: 100px;
     border-radius: 0px 5px 5px 0px;
     border: none;
     font-size: 0.5em;
@@ -231,7 +232,14 @@ body {
     text-transform: uppercase;
     z-index: 2;
     position: realtive;
-
+}
+.content .contentCenter .emailList label.complete {
+    background-color: #2ecc71;
+    font-size: 1.2em;
+    cursor: default;
+}
+.content .contentCenter .emailList label.complete:hover {
+    background-color: #2ecc71;
 }
 .content .contentCenter .emailList input[type="button"] {
     display: none;
@@ -239,7 +247,18 @@ body {
 .content .contentCenter .emailList label:hover {
     background-color: #5fb5e6;
 }
-
+#responseText {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 21px;
+    font-family: 'Oswald';
+    top: 120px;
+    color: #2ecc71;
+}
+#responseText.error {
+    color: #e74c3c;
+}
 /* CLEARFIX */
 .content::after {
     content:'';

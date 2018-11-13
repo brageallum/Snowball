@@ -69,15 +69,33 @@
     </div>
     <div class="content dark">
         <div class="contentCenter">
-            <h1 class="centerTitle">Enter your email to get notified when we release!</h1>
+            <h1 class="centerTitle" id="emailTitle">Enter your email to get notified when we release!</h1>
             <div class="emailList">
-                <input type="text" name="" id="" placeholder="example@email.com">
+                <p id="responseText"></p>
+                <input type="text" id="emailField" placeholder="example@email.com">
                 <div class="detectActive"></div>
-                <label for="emailButton">Join</label>
-                <input id="emailButton"type="button" value="Join">
+                <label for="emailButton" id="emailBtn">Join</label>
+                <input type="button" id="emailButton" value="Join">
             </div>
         </div>
     </div>
+
+    <script>
+        var output = document.getElementById('responseText');
+        var emailButton = document.getElementById('emailBtn');
+        var emailField = document.getElementById('emailField');
+        emailButton.addEventListener('click', () => {
+            if (emailField.value == "" || emailField.value == null) {
+                output.setAttribute('class', 'error');
+                output.innerHTML = "We can't sign you up without an email address";
+            } else {
+                emailButton.setAttribute('class', 'complete');
+                emailButton.innerHTML = "<i class='fas fa-check'></i>";
+                output.removeAttribute('class');
+                output.innerHTML = "You have been added to our emailing list <i class='far fa-smile-wink'></i>";
+            }
+        }, false);
+    </script>
 </body>
 
 </html>
