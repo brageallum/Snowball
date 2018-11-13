@@ -119,12 +119,10 @@ body {
     background-color: #fff;
     margin: 50px 0;
 }
-.content:last-of-type {
-    margin-bottom: 0px;
-}
 .content.dark {
     background-color: #222;
     color: #ddd;
+    margin-bottom: 0px;
 }
 .content.ltr .contentText, .content.ltr .contentMedia {
     float: right;
@@ -258,6 +256,16 @@ body {
 }
 #responseText.error {
     color: #e74c3c;
+}
+#footer {
+    background-color: #111;
+    padding: 30px 0;
+    text-align: center;
+    color: #999;
+    letter-spacing: 1px;
+}
+#footer a {
+    color: #2299dd;
 }
 /* CLEARFIX */
 .content::after {
