@@ -108,7 +108,7 @@ body {
     margin: 0 auto;
     position: relative;
     width: 100%;
-    background-color: #fff;
+    background-color: #f1f1f1;
     margin: 50px 0;
 }
 .content.dark {
@@ -126,6 +126,7 @@ body {
 .content .contentText {
     position: relative;
     width: 40%;
+    text-align: center;
 }
 .content .contentText p {
     position: absolute;
@@ -275,9 +276,16 @@ body {
         width: 100%;
     }
     #heroHeader .heroImage .computer {
+        position: absolute;
         width: 80%;
         left: 50%;
-        bottom: -200px;
+        top: auto;
+        bottom: -100px;
         transform: translateX(-50%);
+    }
+}
+@media screen and (max-width: 750px) {
+    #heroHeader .heroImage .computer {
+        bottom: -10px;
     }
 }
