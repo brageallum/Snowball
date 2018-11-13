@@ -85,15 +85,20 @@
         var output = document.getElementById('responseText');
         var emailButton = document.getElementById('emailBtn');
         var emailField = document.getElementById('emailField');
+        var emailRegex = /^[\w\._]+@\w+\.\w+$/i;
         emailButton.addEventListener('click', () => {
+            console.log(emailRegex.test(emailField.value));
             if (emailField.value == "" || emailField.value == null) {
                 output.setAttribute('class', 'error');
                 output.innerHTML = "We can't sign you up without an email address";
-            } else {
+            } else if(emailRegex.test(emailField.value)) {
                 emailButton.setAttribute('class', 'complete');
                 emailButton.innerHTML = "<i class='fas fa-check'></i>";
                 output.removeAttribute('class');
                 output.innerHTML = "You have been added to our emailing list <i class='far fa-smile-wink'></i>";
+            } else {
+                output.setAttribute('class', 'error');
+                output.innerHTML = "That is not a valid email address";
             }
         }, false);
     </script>
