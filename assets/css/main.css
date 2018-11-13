@@ -119,6 +119,9 @@ body {
     background-color: #fff;
     margin: 50px 0;
 }
+.content:last-of-type {
+    margin-bottom: 0px;
+}
 .content.dark {
     background-color: #222;
     color: #ddd;
