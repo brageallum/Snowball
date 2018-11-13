@@ -241,7 +241,7 @@ body {
     display: none;
 }
 .content .contentCenter .emailList label:hover {
-    background-color: #5fb5e6;
+    background-color: #1e8ac8;
 }
 #responseText {
     position: absolute;
