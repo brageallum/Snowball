@@ -202,7 +202,11 @@ body {
     box-shadow: 0px 0px 0 3pt #2299dd;
 }
 .content .contentCenter .emailList input[type="text"]::placeholder {
+<<<<<<< HEAD
     color: #ccc;
+=======
+    color: #666;
+>>>>>>> 2a19c58d2929842b0d94641353f6b5be75183029
 }
 .content .contentCenter .emailList input[type="text"]:focus + .detectActive {
     opacity: 1;
