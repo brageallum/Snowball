@@ -88,7 +88,7 @@
         var output = document.getElementById('responseText');
         var emailButton = document.getElementById('emailBtn');
         var emailField = document.getElementById('emailField');
-        var emailRegex = /^[\w\._]+@\w+\.\w+$/i;
+        var emailRegex = /^[\w\._]+@[a-zA-Z0-9-]+\.[a-zA-Z]+$/;
         emailButton.addEventListener('click', () => {
             console.log(emailRegex.test(emailField.value));
             if (emailField.value == "" || emailField.value == null) {
