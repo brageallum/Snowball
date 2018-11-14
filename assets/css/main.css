@@ -119,23 +119,26 @@ body {
 .content.ltr .contentText, .content.ltr .contentMedia {
     float: right;
 } 
-.content .contentText, .content .contentMedia {
+.content .contentText, 
+.content .contentMedia {
     float: left;
     height: 500px;
 }
 .content .contentText {
-    position: relative;
     width: 40%;
     text-align: center;
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .content .contentText p {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0px 50px;
     line-height: 1.5;
     font-size: 19px;
+}
+.content .contentText p {
+
 }
 .content .contentMedia {
     position: relative;
