@@ -137,8 +137,8 @@ body {
     line-height: 1.5;
     font-size: 19px;
 }
-.content .contentText p {
-
+.content .contentText h2 {
+    margin-bottom: 10px;
 }
 .content .contentMedia {
     position: relative;
